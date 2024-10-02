@@ -1,7 +1,7 @@
 ## Photo Booth
 
 ### Requirements
-- Python 3.9 or above
+- Python 3.11 or above
 - Flask 3
 
 ### Install Dependencies

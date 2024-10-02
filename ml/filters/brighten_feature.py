@@ -22,7 +22,7 @@ def apply_brighten_1(img_folder, img_name):
         
     command = [
         python_executable,
-        "filter/brighten/test.py",
+        "ml/test.py",
         "--dataroot",
         test_dir,
         "--model",
@@ -32,9 +32,9 @@ def apply_brighten_1(img_folder, img_name):
         "--name",
         "brighten_pix2pix",
         "--checkpoint",
-        "filter/brighten/pretrained_model/Brighten/First/",
+        "ml/pretrained_model/Brighten/First/",
         "--results_dir",
-        "filter/brighten/temp_results/",
+        "ml/temp_results/",
         "--aspect_ratio",
         "1.0",
         "--load_size",
@@ -45,7 +45,7 @@ def apply_brighten_1(img_folder, img_name):
 
     subprocess.run(command)
 
-    result_dir = os.path.join(os.getcwd(), 'filter', 'brighten', 'temp_results', 'brighten_pix2pix','test_latest', 'images')
+    result_dir = os.path.join(os.getcwd(), 'ml', 'temp_results', 'brighten_pix2pix','test_latest', 'images')
 
     if os.path.exists(os.path.join(result_dir, name + '_fake_B.png')):
         os.rename(os.path.join(result_dir, name + '_fake_B.png'), os.path.join(result_dir, name + '.png'))
@@ -75,7 +75,7 @@ def apply_brighten_2(img_folder, img_name):
         
     command = [
         python_executable,
-        "filter/brighten/test.py",
+        "ml/test.py",
         "--dataroot",
         test_dir,
         "--model",
@@ -85,9 +85,9 @@ def apply_brighten_2(img_folder, img_name):
         "--name",
         "brighten_pix2pix",
         "--checkpoint",
-        "filter/brighten/pretrained_model/Brighten/Second/",
+        "ml/pretrained_model/Brighten/Second/",
         "--results_dir",
-        "filter/brighten/temp_results/",
+        "ml/temp_results/",
         "--aspect_ratio",
         "1.0",
         "--load_size",
@@ -98,7 +98,7 @@ def apply_brighten_2(img_folder, img_name):
 
     subprocess.run(command)
 
-    result_dir = os.path.join(os.getcwd(), 'filter', 'brighten', 'temp_results', 'brighten_pix2pix','test_latest', 'images')
+    result_dir = os.path.join(os.getcwd(), 'ml', 'temp_results', 'brighten_pix2pix','test_latest', 'images')
 
     if os.path.exists(os.path.join(result_dir, name + '_fake_B.png')):
         os.rename(os.path.join(result_dir, name + '_fake_B.png'), os.path.join(result_dir, name + '.png'))
@@ -128,7 +128,7 @@ def apply_brighten_3(img_folder, img_name):
         
     command = [
         python_executable,
-        "filter/brighten/test.py",
+        "ml/test.py",
         "--dataroot",
         test_dir,
         "--model",
@@ -138,9 +138,9 @@ def apply_brighten_3(img_folder, img_name):
         "--name",
         "brighten_pix2pix",
         "--checkpoint",
-        "filter/brighten/pretrained_model/Brighten/Third/",
+        "ml/pretrained_model/Brighten/Third/",
         "--results_dir",
-        "filter/brighten/temp_results/",
+        "ml/temp_results/",
         "--aspect_ratio",
         "1.0",
         "--load_size",
@@ -151,7 +151,7 @@ def apply_brighten_3(img_folder, img_name):
 
     subprocess.run(command)
 
-    result_dir = os.path.join(os.getcwd(), 'filter', 'brighten', 'temp_results', 'brighten_pix2pix','test_latest', 'images')
+    result_dir = os.path.join(os.getcwd(), 'ml', 'temp_results', 'brighten_pix2pix','test_latest', 'images')
 
     if os.path.exists(os.path.join(result_dir, name + '_fake_B.png')):
         os.rename(os.path.join(result_dir, name + '_fake_B.png'), os.path.join(result_dir, name + '.png'))
@@ -180,7 +180,7 @@ def apply_brighten_4(img_folder, img_name):
         
     command = [
         python_executable,
-        "filter/brighten/test.py",
+        "ml/test.py",
         "--dataroot",
         test_dir,
         "--model",
@@ -190,9 +190,9 @@ def apply_brighten_4(img_folder, img_name):
         "--name",
         "brighten_pix2pix",
         "--checkpoint",
-        "filter/brighten/pretrained_model/Brighten/Fourth/",
+        "ml/pretrained_model/Brighten/Fourth/",
         "--results_dir",
-        "filter/brighten/temp_results/",
+        "ml/temp_results/",
         "--aspect_ratio",
         "1.0",
         "--load_size",
@@ -203,7 +203,7 @@ def apply_brighten_4(img_folder, img_name):
 
     subprocess.run(command)
 
-    result_dir = os.path.join(os.getcwd(), 'filter', 'brighten', 'temp_results', 'brighten_pix2pix','test_latest', 'images')
+    result_dir = os.path.join(os.getcwd(), 'ml', 'temp_results', 'brighten_pix2pix','test_latest', 'images')
 
     if os.path.exists(os.path.join(result_dir, name + '_fake_B.png')):
         os.rename(os.path.join(result_dir, name + '_fake_B.png'), os.path.join(result_dir, name + '.png'))
@@ -233,7 +233,7 @@ def apply_beauty_1(img_folder, img_name):
         
     command = [
         python_executable,
-        "filter/brighten/test.py",
+        "ml/test.py",
         "--dataroot",
         test_dir,
         "--model",
@@ -243,9 +243,9 @@ def apply_beauty_1(img_folder, img_name):
         "--name",
         "beauty_pix2pix",
         "--checkpoint",
-        "filter/brighten/pretrained_model/Beauty/1st/",
+        "ml/pretrained_model/Beauty/1st/",
         "--results_dir",
-        "filter/brighten/temp_results/",
+        "ml/temp_results/",
         "--aspect_ratio",
         "1.0",
         "--load_size",
@@ -256,7 +256,7 @@ def apply_beauty_1(img_folder, img_name):
 
     subprocess.run(command)
 
-    result_dir = os.path.join(os.getcwd(), 'filter', 'brighten', 'temp_results', 'beauty_pix2pix','test_latest', 'images')
+    result_dir = os.path.join(os.getcwd(), 'ml', 'temp_results', 'beauty_pix2pix','test_latest', 'images')
 
     if os.path.exists(os.path.join(result_dir, name + '_fake_B.png')):
         os.rename(os.path.join(result_dir, name + '_fake_B.png'), os.path.join(result_dir, name + '.png'))
@@ -285,7 +285,7 @@ def apply_beauty_2(img_folder, img_name):
         
     command = [
         python_executable,
-        "filter/brighten/test.py",
+        "ml/test.py",
         "--dataroot",
         test_dir,
         "--model",
@@ -295,9 +295,9 @@ def apply_beauty_2(img_folder, img_name):
         "--name",
         "beauty_pix2pix",
         "--checkpoint",
-        "filter/brighten/pretrained_model/Beauty/2nd/",
+        "ml/pretrained_model/Beauty/2nd/",
         "--results_dir",
-        "filter/brighten/temp_results/",
+        "ml/temp_results/",
         "--aspect_ratio",
         "1.0",
         "--load_size",
@@ -308,7 +308,7 @@ def apply_beauty_2(img_folder, img_name):
 
     subprocess.run(command)
 
-    result_dir = os.path.join(os.getcwd(), 'filter', 'brighten', 'temp_results', 'beauty_pix2pix','test_latest', 'images')
+    result_dir = os.path.join(os.getcwd(), 'ml', 'temp_results', 'beauty_pix2pix','test_latest', 'images')
 
     if os.path.exists(os.path.join(result_dir, name + '_fake_B.png')):
         os.rename(os.path.join(result_dir, name + '_fake_B.png'), os.path.join(result_dir, name + '.png'))
@@ -337,7 +337,7 @@ def apply_beauty_3(img_folder, img_name):
         
     command = [
         python_executable,
-        "filter/brighten/test.py",
+        "ml/test.py",
         "--dataroot",
         test_dir,
         "--model",
@@ -347,9 +347,9 @@ def apply_beauty_3(img_folder, img_name):
         "--name",
         "beauty_pix2pix",
         "--checkpoint",
-        "filter/brighten/pretrained_model/Beauty/3rd/",
+        "ml/pretrained_model/Beauty/3rd/",
         "--results_dir",
-        "filter/brighten/temp_results/",
+        "ml/temp_results/",
         "--aspect_ratio",
         "1.0",
         "--load_size",
@@ -360,7 +360,7 @@ def apply_beauty_3(img_folder, img_name):
 
     subprocess.run(command)
 
-    result_dir = os.path.join(os.getcwd(), 'filter', 'brighten', 'temp_results', 'beauty_pix2pix','test_latest', 'images')
+    result_dir = os.path.join(os.getcwd(), 'ml', 'temp_results', 'beauty_pix2pix','test_latest', 'images')
 
     if os.path.exists(os.path.join(result_dir, name + '_fake_B.png')):
         os.rename(os.path.join(result_dir, name + '_fake_B.png'), os.path.join(result_dir, name + '.png'))
@@ -389,7 +389,7 @@ def apply_watermak_1(img_folder, img_name):
         
     command = [
         python_executable,
-        "filter/brighten/test.py",
+        "ml/test.py",
         "--dataroot",
         test_dir,
         "--model",
@@ -399,9 +399,9 @@ def apply_watermak_1(img_folder, img_name):
         "--name",
         "watermark_pix2pix",
         "--checkpoint",
-        "filter/brighten/pretrained_model/Watermark/1st/",
+        "ml/pretrained_model/Watermark/1st/",
         "--results_dir",
-        "filter/brighten/temp_results/",
+        "ml/temp_results/",
         "--aspect_ratio",
         "1.0",
         "--load_size",
@@ -412,7 +412,7 @@ def apply_watermak_1(img_folder, img_name):
 
     subprocess.run(command)
 
-    result_dir = os.path.join(os.getcwd(), 'filter', 'brighten', 'temp_results', 'watermark_pix2pix','test_latest', 'images')
+    result_dir = os.path.join(os.getcwd(), 'ml', 'temp_results', 'watermark_pix2pix','test_latest', 'images')
 
     if os.path.exists(os.path.join(result_dir, name + '_fake_B.png')):
         os.rename(os.path.join(result_dir, name + '_fake_B.png'), os.path.join(result_dir, name + '.png'))
@@ -427,7 +427,7 @@ def apply_watermak_1(img_folder, img_name):
 
 
 def create_dir(name):
-    temp = os.path.join(os.getcwd(), 'filter', 'brighten', 'temp_testset')
+    temp = os.path.join(os.getcwd(), 'ml', 'temp_testset')
     if not os.path.exists(os.path.join(temp, name)):
         os.mkdir(os.path.join(temp, name))
         os.mkdir(os.path.join(temp, name, 'test'))

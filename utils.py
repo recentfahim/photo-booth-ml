@@ -25,11 +25,11 @@ def create_directory(path):
 
 
 def filter_request(filter_name, image):
-    from filter.pencil_sketch import pencil_sketch
-    from filter.cantoon_filter import cantoon_filter
-    from filter.remove_bg import remove_background
-    from filter.brighten.brighten_feature import apply_brighten_1, apply_brighten_2, apply_brighten_3, apply_brighten_4, apply_beauty_1, apply_beauty_2, apply_beauty_3, apply_watermak_1
-    from filter.whitening import whitening_method1, whitening_method2, whitening_method3, whitening_method4, \
+    from ml.filters.pencil_sketch import pencil_sketch
+    from ml.filters.cantoon_filter import cantoon_filter
+    from ml.filters.remove_bg import remove_background
+    from ml.filters.brighten_feature import apply_brighten_1, apply_brighten_2, apply_brighten_3, apply_brighten_4, apply_beauty_1, apply_beauty_2, apply_beauty_3, apply_watermak_1
+    from ml.filters.whitening import whitening_method1, whitening_method2, whitening_method3, whitening_method4, \
         whitening_method5, whitening_method6, whitening_method7, whitening_method8
 
     if not filter_name and not image:
